@@ -7,7 +7,7 @@ FROM dbo.AgentsInfo ai
 INNER JOIN dbo.AgentsRating ar 
 ON ai.AgentsName = AR.AgentsName
 
--- 2. Find the information of all airbnb and count how many employers work at the company.
+-- 2. Find the information of all zillow and count how many employers work at the company.
 SELECT AgentsName, COUNT(AgentsEmployer) AS Zillow_Employee
 FROM dbo.AgentsInfo
 WHERE AgentsEmployer = 'Zillow'
